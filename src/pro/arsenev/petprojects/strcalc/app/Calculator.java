@@ -81,7 +81,7 @@ public class Calculator {
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
         String[] arithmeticArray = calculator.makeArrayForCalculate (calculator.readCalculateString ());
-        //System.out.println("arithmeticArray: " + Arrays.toString(arithmeticArray));
+        // System.out.println("arithmeticArray: " + Arrays.toString(arithmeticArray));
         System.out.println("Результат: " + calculator.calculate (arithmeticArray));
 
     }
