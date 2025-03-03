@@ -19,7 +19,7 @@ public class Calculator {
         //stringForCalculate = "1.2 + 3,4 - 5*6/2";
         stringForCalculate = stringForCalculate.replaceAll(",", ".");
         // было бы хорошо ещё реализовать проверку-удаление чтобы первым было  число, а не n арфметических знаков
-        System.out.println("stringForCalculate: " + stringForCalculate);
+        // System.out.println("stringForCalculate: " + stringForCalculate);
         return stringForCalculate;
     }
     String[] makeArrayForCalculate (String stringForCalculate){
@@ -64,7 +64,7 @@ public class Calculator {
             }
         }
 
-        System.out.println("arithmeticArray2: " + Arrays.toString(arithmeticArray2));
+        // System.out.println("arithmeticArray2: " + Arrays.toString(arithmeticArray2));
 
         double result = Double.parseDouble(arithmeticArray2[0]);
         for (int i = 1; i < arithmeticArray2.length; i++) {
@@ -81,7 +81,7 @@ public class Calculator {
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
         String[] arithmeticArray = calculator.makeArrayForCalculate (calculator.readCalculateString ());
-        System.out.println("arithmeticArray: " + Arrays.toString(arithmeticArray));
+        //System.out.println("arithmeticArray: " + Arrays.toString(arithmeticArray));
         System.out.println("Результат: " + calculator.calculate (arithmeticArray));
 
     }
